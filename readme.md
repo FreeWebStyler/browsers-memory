@@ -1,7 +1,8 @@
 ### Browser memory usage PHP script for Windows.
 
 Why? Cause wekbit-based browser split their processes for each tab and calculating memory usage for whole browser is complicated.
-And it easy to compare different browsers about memory usage. And different extensions for browsers, that help to free memory like tab hibernation or tab suspend.
+
+And it easy way to compare different browsers about memory usage. And different extensions for browsers, that help to free memory like tab hibernation or tab suspend.
 
 ### Official Documentation
 
