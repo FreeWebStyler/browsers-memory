@@ -4,6 +4,7 @@ include 'helpers.php';
 
 $browserExeName = 'browser.exe'; // Yandex.browser
 $browserExeName = 'opera.exe'; // Opera
+$browserExeName = 'vivaldi.exe'; // Vivladi
 
 $res = iconv('CP866', "UTF-8//IGNORE", shell_exec('c:\\Windows\\System32\\tasklist.exe /fi "imagename eq '.$browserExeName.'" 2>&1'));
 $ar = explode("\n",$res);
