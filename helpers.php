@@ -3,6 +3,7 @@
 function pr(){ foreach(func_get_args() as $arg){ print_r($arg); } }
 function pre(){ echo '<pre>'; foreach(func_get_args() as $arg){ print_r($arg); } echo '</pre>'; }
 function pt(){ echo '<plaintext>'; foreach(func_get_args() as $arg){ print_r($arg); } }
+function dd(){ echo '<pre>'; foreach(func_get_args() as $arg){ print_r($arg); } die('</pre>'); }
 
 function toOrd($str){
  $lim=strlen($str);
