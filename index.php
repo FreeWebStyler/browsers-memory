@@ -32,7 +32,10 @@ if(!isset($browser)) die('Please, choose your browser!');
 
 function getData($browserExe, $browserName) {
     $res = iconv('CP866', "UTF-8//IGNORE", shell_exec('c:\\Windows\\System32\\tasklist.exe /fi "imagename eq '.$browserExe.'" 2>&1'));
+    //echo $res;
     $ar = explode("\n",$res);
+    
+    if(count($ar) == 2) return;
     unset($ar[0]); unset($ar[count($ar)]);
     
     $sum = 0;
